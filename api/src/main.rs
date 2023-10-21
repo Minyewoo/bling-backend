@@ -1,8 +1,7 @@
-pub mod health;
-
+pub mod routes;
 use std::{sync::{Mutex, Arc}, thread, time};
-
 use actix_web::{App, HttpServer, web};
+use routes::health;
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
